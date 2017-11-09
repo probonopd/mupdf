@@ -27,4 +27,4 @@
 	url = https://github.com/ArtifexSoftware/thirdparty-curl.git
 [submodule "thirdparty/freeglut"]
 	path = thirdparty/freeglut
-	url = https://github.com/ArtifexSoftware/thirdparty-freeglut.git
+	url = https://github.com/LuaDist/freeglut.git
