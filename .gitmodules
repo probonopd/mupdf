@@ -1,30 +1,30 @@
-[submodule "jbig2dec"]
-	path = jbig2dec
-	url = https://github.com/jbig2dec.git
-[submodule "mujs"]
-	path = mujs
-	url = https://github.com/mujs.git
-[submodule "freetype"]
-	path = freetype
-	url = https://github.com/thirdparty-freetype2.git
-[submodule "harfbuzz"]
-	path = harfbuzz
-	url = https://github.com/thirdparty-harfbuzz.git
-[submodule "jpeg"]
-	path = libjpeg
-	url = https://github.com/thirdparty-libjpeg.git
-[submodule "lcms2"]
-	path = lcms2
-	url = https://github.com/thirdparty-lcms2.git
-[submodule "openjpeg"]
-	path = openjpeg
-	url = https://github.com/thirdparty-openjpeg.git
-[submodule "zlib"]
-	path = zlib
-	url = https://github.com/thirdparty-zlib.git
-[submodule "curl"]
-	path = curl
-	url = https://github.com/thirdparty-curl.git
-[submodule "freeglut"]
-	path = freeglut
-	url = https://github.com/thirdparty-freeglut.git
+[submodule "thirdparty/jbig2dec"]
+	path = thirdparty/jbig2dec
+	url = ../jbig2dec.git
+[submodule "thirdparty/mujs"]
+	path = thirdparty/mujs
+	url = ../mujs.git
+[submodule "thirdparty/freetype"]
+	path = thirdparty/freetype
+	url = ../thirdparty-freetype2.git
+[submodule "thirdparty/harfbuzz"]
+	path = thirdparty/harfbuzz
+	url = ../thirdparty-harfbuzz.git
+[submodule "thirdparty/jpeg"]
+	path = thirdparty/libjpeg
+	url = ../thirdparty-libjpeg.git
+[submodule "thirdparty/lcms2"]
+	path = thirdparty/lcms2
+	url = ../thirdparty-lcms2.git
+[submodule "thirdparty/openjpeg"]
+	path = thirdparty/openjpeg
+	url = ../thirdparty-openjpeg.git
+[submodule "thirdparty/zlib"]
+	path = thirdparty/zlib
+	url = ../thirdparty-zlib.git
+[submodule "thirdparty/curl"]
+	path = thirdparty/curl
+	url = ../thirdparty-curl.git
+[submodule "thirdparty/freeglut"]
+	path = thirdparty/freeglut
+	url = ../thirdparty-freeglut.git
