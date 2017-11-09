@@ -1,4 +1,4 @@
-[submodule jbig2dec"]
+[submodule "jbig2dec"]
 	path = jbig2dec
 	url = https://github.com/jbig2dec.git
 [submodule "mujs"]
