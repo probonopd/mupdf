@@ -12,7 +12,7 @@ install:
     - # source /opt/qt*/bin/qt*-env.sh
 
 script:
-  - git submodule update --init
+  - ( cd thirdparty/ ; git submodule init ; git submodule update )
   - # ./configure --prefix=/usr
   - make prefix=/usr
   - make install DESTDIR=$(readlink -f appdir) ; find appdir/
