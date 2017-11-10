@@ -20,10 +20,7 @@ int main(int argc, char *argv[])
 	path = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(dialog));
         if( path!=NULL )
         {
-	    printf("mupdf-gl '%s'\n", path);
             return execlp("mupdf-gl", "mupdf-gl", path, NULL);
-
-	    g_free(path);
         }
     }
     gtk_widget_destroy(dialog);
