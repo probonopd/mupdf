@@ -10,6 +10,7 @@ script:
   - gcc -Wl,--no-as-needed `pkg-config --cflags --libs gtk+-2.0` platform/x11/file_chooser.c -o file_chooser ; strip file_chooser
   - ( cd thirdparty/ ; git submodule init ; git submodule update )
   - make prefix=/usr install DESTDIR=$(readlink -f appdir) ; find appdir/
+
   - mkdir -p ./appdir/usr/share/hicolor/scalable/apps ; wget -c "https://ghostscript.com/~tor/mupdf-logo/mupdf-logo.svg" -O ./appdir/usr/share/hicolor/scalable/apps/mupdf.svg
   - rm -rf  ./appdir/usr/include appdir/usr/lib/*.a # Don't need to ship developer files in AppImage
   
