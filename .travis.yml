@@ -12,6 +12,7 @@ script:
   - mkdir -p ./appdir/usr/share/applications ; cp platform/x11/mupdf.desktop ./appdir/usr/share/applications/
   - mkdir -p ./appdir/usr/share/hicolor/scalable/apps ; wget -c "https://ghostscript.com/~tor/mupdf-logo/mupdf-logo.svg" -O ./appdir/usr/share/hicolor/scalable/apps/mupdf.svg
   - rm -rf  ./appdir/usr/include appdir/usr/lib/*.a # Don't need to ship developer files in AppImage
+  - rm ./appdir/usr/bin/{mjsgen,mujstest,mupdf-x11,mupdf-x11-curl,muraster,mutool} # Redundant?
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
@@ -21,7 +22,7 @@ script:
 after_success:
   - find ./appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - bash upload.sh ./APPNAME*.AppImage*
+  - bash upload.sh ./MuPDF*.AppImage*
   
 branches:
   except:
