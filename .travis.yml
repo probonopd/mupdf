@@ -13,9 +13,7 @@ install:
 
 script:
   - ( cd thirdparty/ ; git submodule init ; git submodule update )
-  - # ./configure --prefix=/usr
-  - make prefix=/usr
-  - make install DESTDIR=$(readlink -f appdir) ; find appdir/
+  - make prefix=/usr install DESTDIR=$(readlink -f appdir) ; find appdir/
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
