@@ -27,10 +27,17 @@ script:
   - ./linuxdeployqt*.AppImage ./mupdf.AppDir/usr/share/applications/*.desktop -appimage
   - # Next, mutool
   - cp -r appdir mutool.AppDir
+  - rm ./mutool.AppDir/usr/bin/{mjsgen,mujstest,muraster,mupdf*}
   - mkdir -p ./mutool.AppDir/usr/share/applications ; cp platform/x11/mutool.desktop ./mutool.AppDir/usr/share/applications/
   - ./linuxdeployqt*.AppImage ./mutool.AppDir/usr/share/applications/*.desktop -bundle-non-qt-libs
   - ./linuxdeployqt*.AppImage ./mutool.AppDir/usr/share/applications/*.desktop -appimage
-
+  - # Next, mujstest
+  - cp -r appdir mujstest.AppDir
+  - rm ./mujstest.AppDir/usr/bin/{mjsgen,mutool,muraster,mupdf*}
+  - mkdir -p ./mujstest.AppDir/usr/share/applications ; cp platform/x11/mujstest.desktop ./mujstest.AppDir/usr/share/applications/
+  - ./linuxdeployqt*.AppImage ./mujstest.AppDir/usr/share/applications/*.desktop -bundle-non-qt-libs
+  - ./linuxdeployqt*.AppImage ./mujstest.AppDir/usr/share/applications/*.desktop -appimage
+  
 after_success:
   - rm ./linuxdeployqt*.AppImage
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
