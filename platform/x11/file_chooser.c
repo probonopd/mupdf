@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 {
     gchar *path;
     GtkWidget *dialog;
-    gboolean ret = 0;
     int dlg_ret = 0;
 
     gtk_init(&argc, &argv);
