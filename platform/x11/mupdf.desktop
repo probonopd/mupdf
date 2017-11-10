@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=MuPDF
 GenericName=Lightweight PDF, XPS, and E-book viewer
-Exec=mupdf-gl %f
+Exec=file_chooser %f
 Icon=mupdf
 Terminal=false
 Type=Application
