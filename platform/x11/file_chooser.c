@@ -1,4 +1,6 @@
-/* Shows file chooser dialog and returns selected file. Compile: 
+/* Shows file chooser dialog and returns selected file.
+ * THIS IS A STUB. FEEL FREE TO CHANGE AS YOU SEE FIT.
+ * Compile: 
  * sudo apt install libgtk2.0-dev
  * gcc -Wl,--no-as-needed `pkg-config --cflags --libs gtk+-2.0` file_chooser.c -o file_chooser */
 
