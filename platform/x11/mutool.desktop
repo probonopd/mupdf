@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=mutool
-GenericName=All purpose tool for dealing with PDF files
+Comment=All purpose tool for dealing with PDF files
 Exec=mutool %f
 Icon=mupdf
 Terminal=true
