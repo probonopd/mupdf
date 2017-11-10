@@ -28,8 +28,6 @@ script:
   - # Next, mutool
   - cp -r appdir mutool.AppDir
   - mkdir -p ./mutool.AppDir/usr/share/applications ; cp platform/x11/mutool.desktop ./mutool.AppDir/usr/share/applications/
-  - rm ./mutool.AppDir/usr/bin/{mjsgen,mujstest,muraster,mupdf*}
-  - ./linuxdeployqt*.AppImage ./mutool.AppDir/usr/bin/file_chooser -bundle-non-qt-libs
   - ./linuxdeployqt*.AppImage ./mutool.AppDir/usr/share/applications/*.desktop -bundle-non-qt-libs
   - ./linuxdeployqt*.AppImage ./mutool.AppDir/usr/share/applications/*.desktop -appimage
 
